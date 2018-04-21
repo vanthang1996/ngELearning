@@ -10,7 +10,7 @@ npm install
 
 ### Bootstrap
 `
-npm install bootstrap@next --save
+npm install bootstrap --save
 `
 
 ### JQuery
