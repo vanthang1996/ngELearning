@@ -2,7 +2,7 @@
   <div class="sign-text">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-4 offset-md-4 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4">
+        <div class="col-sm-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4">
           <div class="card card-sign">
             <div class="card-body">
               <div class="text-center py-3">
@@ -11,8 +11,8 @@
               <form name="form" (ngSubmit)="loginFormGroup.valid && login()" [formGroup]="loginFormGroup" novalidate>
 
                 <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" name="email" formControlName="email" required />
+                  <label class="font-weight-bold" for="email">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" formControlName="email" required />
                   <div class="help-block">
                     <small class="form-text text-muted" *ngIf="loginFormGroup.controls['email'].errors && ( loginFormGroup.controls['email'].dirty || loginFormGroup.controls['email'].touched)">
                       <p style="color: red " *ngIf="loginFormGroup.controls['email'].errors.required"> &nbsp;&nbsp; Email không được để trống </p>
@@ -22,13 +22,20 @@
                 </div>
 
                 <div class="form-group" [ngClass]="{ 'has-error': loginFormGroup.submitted && !password.valid }">
-                  <label for="password">Password</label>
-                  <input type="password" class="form-control" name="password" formControlName="password" required />
+                  <label class="font-weight-bold" for="password">Mật khẩu</label>
+                  <input type="password" class="form-control" id="password" name="password" formControlName="password" required />
                   <div class="help-block">
                     <small class="form-text text-muted" *ngIf="loginFormGroup.controls['email'].errors && ( loginFormGroup.controls['email'].dirty || loginFormGroup.controls['email'].touched)">
                       <p style="color: red " *ngIf="loginFormGroup.controls['email'].errors.required"> &nbsp;&nbsp; Mật khẩu không được để trống </p>
                       <p style="color: red " *ngIf="loginFormGroup.controls['email'].errors.pattern"> &nbsp;&nbsp; Mật khẩu nhập không hợp lệ </p>
                     </small>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Ghi nhớ tôi!</label>
                   </div>
                 </div>
 
