@@ -20,14 +20,15 @@ export class AuthenticationService {
 
   login(email: string, password: string): Observable<any> {
     // return this.http.post<any>(this.config.auth_login, { email: email, password: password }) ;
-    return this.http.post<any>(this.config.url_port + 'auth/login', {
+    return this.http.post<any>(this.config.url_port + this.config.auth_login, {
       email: email,
       pwd: password
     }).map(user => {
-      if (user && user.access_token) {
+       console.log(user);
+      if (user && user.token) {
         localStorage.setItem(
           this.config.token,
-          JSON.stringify(user.access_token)
+          JSON.stringify(user.token)
         );
       }
       return user;
@@ -51,12 +52,12 @@ export class AuthenticationService {
         }
         return user;
       },
-      (err: HttpErrorResponse) => {
-        if (err.status === 403) {
-          console.log('Chưa đăng nhập!');
+        (err: HttpErrorResponse) => {
+          if (err.status === 403) {
+            console.log('Chưa đăng nhập!');
+          }
         }
-      }
-    );
+      );
   }
 
   getInformation(): any {
@@ -64,7 +65,7 @@ export class AuthenticationService {
       .map((user: User) => {
         return user;
       }
-    );
+      );
   }
 
   logout(): void {
