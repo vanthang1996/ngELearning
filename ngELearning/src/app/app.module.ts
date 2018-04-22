@@ -46,8 +46,8 @@ const APP_CONTAINERS = [
     AuthGuard,
     ConfigValue,
     AuthenticationService,
-    BaseRequestOptions,
-    fakeBackendProvider,
+    BaseRequestOptions
+      // ,    fakeBackendProvider,
   ],
   bootstrap: [AppComponent]
 })
