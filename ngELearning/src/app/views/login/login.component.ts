@@ -27,9 +27,6 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    // this.authenticationService.createUser('k40cntt@gmail.com' , 'nhiyeudkvn').subscribe( (res: any) => {
-    //       console.log(res);
-    // }) ;
     this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
     if (localStorage.getItem(this.config.remember)) {
       this.userRemember = JSON.parse(atob(localStorage.getItem(this.config.remember)));
@@ -57,21 +54,6 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    // this.loading = true;
-    // this.authenticationService.login(this.model.email, this.model.password)
-    //   .subscribe(result => {
-    //     localStorage.setItem('token', JSON.stringify(result));
-    //     console.log(result);
-    //     this.loading = false;
-
-    //     this.router.navigate(['/']);
-    //   }, (err: HttpErrorResponse) => {
-    //     if (err.status === 403) {
-    //       // alert(err.statusText) ;
-    //     }
-    //     this.loading = false;
-    //   });
-
     if (!this.loading) {
       this.loading = true;
       this.authenticationService.login(this.loginFormGroup.value.email, this.loginFormGroup.value.password)

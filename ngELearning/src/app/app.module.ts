@@ -6,16 +6,16 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent, SlidebarComponent, HomeLayoutComponent } from './shared';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { StartComponent } from './start/start.component';
 import { LoginComponent } from './views/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule, BaseRequestOptions } from '@angular/http';
 import { AuthGuard } from './_guards';
-import { fakeBackendProvider } from './_helpers';
 import { MockBackend } from '@angular/http/testing';
 import { AuthenticationService } from './_services/authentication.service';
 import { ConfigValue } from './_helpers/config-value';
+import { JwtInterceptor } from './_helpers/JwtInterceptor';
 
 const APP_COMPONENTS = [
   HeaderComponent,
@@ -46,8 +46,12 @@ const APP_CONTAINERS = [
     AuthGuard,
     ConfigValue,
     AuthenticationService,
-    BaseRequestOptions
-      // ,    fakeBackendProvider,
+    BaseRequestOptions,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: JwtInterceptor,
+      multi: true
+    }
   ],
   bootstrap: [AppComponent]
 })

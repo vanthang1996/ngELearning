@@ -1,22 +1,21 @@
 <nav class="sidebar">
   <div class="sidebar__header">
     <img src="assets/images/cyberpop-zoe.jpg" class="rounded rounded-circle py-3" alt="">
-    <h5><a href="">Nguyễn Tấn Phát</a></h5>
+    <h5 *ngIf="isLogin"><a href="">{{ teacher?teacher?.firstName: 'Loading...' }} {{ teacher?teacher?.lastName: 'Loading...' }}</a></h5>
     <select id="select-role" class="form-control">
-      <option value="sidebar-truong-khoa">Trưởng khoa</option>
-      <option value="sidebar-truong-bo-mon">Trưởng bộ môn</option>
-      <option value="sidebar-giang-vien">Giảng viên</option>
+      <!-- <option *ngFor="let itemRole of role"  [value]="itemRole.roleID">{{ itemRole.roleName }}</option> -->
     </select>
   </div>
   <div class="sidebar__body">
     <ul class="list-unstyled components">
-      <li>
-        <a href="home.html">
+      <li *ngFor="let key of getKeys(mapMenuRole)">
+        <a [routerLink]="key">
           <i class="fas fa-home"></i>
-          Trang chủ
+            {{mapMenuRole.get(key)}}
         </a>
       </li>
-      <li>
+
+      <!-- <li>
         <a href="thong-tin-ca-nhan.html">
           <i class="fas fa-user"></i>
           Thông tin cá nhân
@@ -27,7 +26,7 @@
           <i class="fas fa-signal"></i>
           Thống kê
         </a>
-      </li>
+      </li> -->
     </ul>
     <div class="sidebar-truong-khoa sidebar-box">
       <ul class="list-unstyled components">
