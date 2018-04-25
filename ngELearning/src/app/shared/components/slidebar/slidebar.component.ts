@@ -18,8 +18,7 @@ export class SlidebarComponent implements OnInit {
   public teacher: Teacher;
   public role: Array<Role> = new Array();
   public isLogin = true;
-  public mapMenuRole: Map<string, string> = new Map(); // key la url, value la ten menu
-
+  public mapMenuRole: Map<string, Array<string>> = new Map(); // key la url, value la ten menu
   constructor(
     private authenticationService: AuthenticationService,
     private router: Router,
@@ -39,14 +38,23 @@ export class SlidebarComponent implements OnInit {
     });
   }
   addMenuForTk(): void {
-    this.mapMenuRole.set('/add-gv', 'Thêm giảng viên');
-    this.mapMenuRole.set('/add-question', 'Thêm câu hỏi');
-  }
-  addMenuForGv(): void {
-
+    this.mapMenuRole.clear();
+    this.mapMenuRole.set('/tk/them-giang-vien', Array('fas fa-user-plus', 'Thêm giảng viên'));
+    this.mapMenuRole.set('/tk/phan-cong-day', Array('fab fa-forumbee', 'Phân công dạy'));
   }
   addMenuForTbm(): void {
-
+    this.mapMenuRole.clear();
+    this.mapMenuRole.set('/tbm/bo-mon', Array('fas fa-archive', 'Bộ môn'));
+    this.mapMenuRole.set('/tbm/phan-cong', Array('fab fa-forumbee', 'Phân công'));
+    this.mapMenuRole.set('/tbm/duyet', Array('fas fa-check', 'Duyệt'));
+    this.mapMenuRole.set('/tbm/chi-tiet-phan-cong', Array('fas fa-list', 'Chi tiết phân công'));
+    this.mapMenuRole.set('/tbm/tao-de-thi', Array('fas fa-edit', 'Tạo đề thi'));
+  }
+  addMenuForGv(): void {
+    this.mapMenuRole.clear();
+    this.mapMenuRole.set('/gv/mon-hoc', Array('fas fa-folder', 'Môn học'));
+    this.mapMenuRole.set('/gv/cong-viec', Array('fas fa-briefcase', 'Công việc'));
+    this.mapMenuRole.set('/gv/soan-cau-hoi', Array('fas fa-edit', 'Soạn câu hỏi'));
   }
 
   getRole(): void {
@@ -54,25 +62,18 @@ export class SlidebarComponent implements OnInit {
       role.forEach((e: string) => {
         this.role.push(new Role(e));
       });
-      this.showMenuItemByRole();
     });
   }
 
-  showMenuItemByRole(): void {
-    this.role.forEach((w: Role) => {
-      switch (w.roleID) {
-        // tslint:disable-next-line:no-unused-expression
-        case 'GV': this.addMenuForGv(); break;
-        case 'TBM': this.addMenuForTbm(); break;
-        case 'TK': this.addMenuForTk() ; break;
-      }
-    });
-     this.mapMenuRole.forEach((key, value) => {
-        console.log(key);
-        console.log(value);
-     });
+
+  showMenuItemByRole(value): void {
+    switch (value) {
+      case 'GV': this.addMenuForGv(); break;
+      case 'TBM': this.addMenuForTbm(); break;
+      case 'TK': this.addMenuForTk(); break;
+    }
   }
-  getKeys(map){
+  getKeys(map) {
     return Array.from(map.keys());
   }
 }

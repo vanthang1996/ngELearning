@@ -1,4 +1,4 @@
-.wrapper 
+.wrapper
 	a
 		&[data-toggle="collapse"]
 			position: relative
@@ -12,11 +12,11 @@
 			right: 20px
 			font-size: 0.6em
 
-		&[aria-expanded="true"]::before 
+		&[aria-expanded="true"]::before
 	    	content: '\f077'
 
 @media screen and (min-width: 992px)
-	.wrapper 
+	.wrapper
 		display: flex
 		align-items: stretch
 		.sidebar
@@ -39,6 +39,7 @@
 						text-decoration: none
 						font-size: 1.5rem
 						color: #fff
+            text-transform: uppercase
 				h6
 					text-align: center
 					font-size: 1rem
@@ -46,7 +47,7 @@
 				border-bottom: 1px solid (#2e353d + 50)
 				ul
 					li
-						a 
+						a
 							text-algin: left
 							text-decoration: none
 							color: #fff
@@ -64,26 +65,26 @@
 								border-bottom: 0
 								border-left: .3em solid transparent
 
-							i 
+							i
 								margin-right: 10px
 
 							&:hover
 								color: #2e353d
 								background: #fff
-							
+
 						&.active > a, a[aria-expanded="true"]
 							color: #fff
 							background: #426bbc
 
-						ul 
-							li 
-								a 
+						ul
+							li
+								a
 									font-size: 0.9em !important
 									padding-left: 30px !important
 									background: #426bbc
 									// color: #fff
 			&__footer
-				a 
+				a
 					color: #fff
 				text-align: left
 				font-size: 0.8rem
@@ -93,25 +94,25 @@
 	.open-sidebar
 		display: none
 
-	.wrapper 
+	.wrapper
 		display: flex
 		align-items: stretch
 		.sidebar
 			min-width: 100px
 			max-width: 100px
 			transition: all 0.3s
-			background: $blue-color
+			background: #2e353d
 			color: #fff
 			&__header
 				margin-bottom: 10px
 				margin-top: 50px
 				padding: 10px
-				border-bottom: 1px solid $blue-color + 30
+				border-bottom: 1px solid #2e353d + 30
 				img
 					width: 100%
 				h5
 					text-align: center
-					a 
+					a
 						text-decoration: none
 						color: #fff
 						font-size: 1.5rem
@@ -123,7 +124,7 @@
 				ul
 					li
 						text-align: center
-						a 
+						a
 							text-algin: center
 							text-decoration: none
 							color: #fff
@@ -143,8 +144,8 @@
 								border-right: .3em solid transparent
 								border-bottom: 0
 								border-left: .3em solid transparent
-				
-							i 
+
+							i
 								font-size: 3rem
 
 							&:hover
@@ -161,44 +162,44 @@
 					        -webkit-transform: translateX(50%)
 					        -ms-transform: translateX(50%)
 					        transform: translateX(50%)
-							
+
 						&.active > a, a[aria-expanded="true"]
 							color: #fff
 							background: #426fc9
 
-						ul 
-							li 
-								a 
+						ul
+							li
+								a
 									font-size: 0.9em !important
 									background: #426fc9
 									min-height: 40px
 			&__footer
-				a 
+				a
 					color: #fff
 				text-align: center
 				font-size: 0.8rem
-				padding: 20px 0		
+				padding: 20px 0
 
 @media (max-width: 575px)
-	.wrapper 
+	.wrapper
 
 		.sidebar
 			z-index: 1000
 			position: fixed
 			transition: all 0.3s
-			background: $blue-color
+			background: #2e353d
 			color: #fff
 			position: relative
 			&__header
 				margin-bottom: 10px
 				margin-top: 50px
 				padding: 10px
-				border-bottom: 1px solid $blue-color + 30
+				border-bottom: 1px solid #2e353d + 30
 				img
 					width: 100%
 				h5
 					text-align: center
-					a 
+					a
 						text-decoration: none
 						color: #fff
 						font-size: 1.5rem
@@ -210,7 +211,7 @@
 				ul
 					li
 						text-align: left
-						a 
+						a
 							text-decoration: none
 							color: #fff
 							font-size: 1rem
@@ -227,8 +228,8 @@
 								border-right: .3em solid transparent
 								border-bottom: 0
 								border-left: .3em solid transparent
-				
-							i 
+
+							i
 								font-size: 1.5rem
 
 							&:hover
@@ -237,19 +238,19 @@
 
 							&[data-toggle="collapse"]
 								position: relative
-							
+
 						&.active > a, a[aria-expanded="true"]
 							color: #fff
 							background: #426fc9
 
-						ul 
-							li 
-								a 
+						ul
+							li
+								a
 									font-size: 0.9em !important
 									background: #426fc9
 									// min-height: 40px
 			&__footer
-				a 
+				a
 					color: #fff
 				text-align: center
 				font-size: 0.8rem

@@ -8,8 +8,14 @@ const routes: Routes = [
     path: '',
     component: MainComponent
   }, {
-    path: 'truong-khoa',
+    path: 'tk',
     loadChildren: './truong-khoa/truong-khoa.module#TruongKhoaModule'
+  }, {
+    path: 'tbm',
+    loadChildren: './truong-bo-mon/truong-bo-mon.module#TruongBoMonodule'
+  }, {
+    path: 'gv',
+    loadChildren: './giang-vien/giang-vien.module#GiangVienModule'
   }
 ];
 

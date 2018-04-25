@@ -2869,7 +2869,8 @@ body::-webkit-scrollbar-track {
           .wrapper .sidebar__header h5 a {
             text-decoration: none;
             font-size: 1.5rem;
-            color: #fff; }
+            color: #fff;
+              color-text-transform: uppercase; }
         .wrapper .sidebar__header h6 {
           text-align: center;
           font-size: 1rem; }
@@ -2927,13 +2928,13 @@ body::-webkit-scrollbar-track {
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s;
-      background: #4F80E1;
+      background: #2e353d;
       color: #fff; }
       .wrapper .sidebar__header {
         margin-bottom: 10px;
         margin-top: 50px;
         padding: 10px;
-        border-bottom: 1px solid #6d9eff; }
+        border-bottom: 1px solid #4c535b; }
         .wrapper .sidebar__header img {
           width: 100%; }
         .wrapper .sidebar__header h5 {
@@ -3003,14 +3004,14 @@ body::-webkit-scrollbar-track {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    background: #4F80E1;
+    background: #2e353d;
     color: #fff;
     position: relative; }
     .wrapper .sidebar__header {
       margin-bottom: 10px;
       margin-top: 50px;
       padding: 10px;
-      border-bottom: 1px solid #6d9eff; }
+      border-bottom: 1px solid #4c535b; }
       .wrapper .sidebar__header img {
         width: 100%; }
       .wrapper .sidebar__header h5 {

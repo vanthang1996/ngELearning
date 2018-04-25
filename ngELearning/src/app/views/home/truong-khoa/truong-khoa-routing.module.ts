@@ -1,20 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DanhSachBoMonComponent } from './danh-sach-bo-mon/danh-sach-bo-mon.component';
-import { DanhSachMonHocComponent } from './danh-sach-mon-hoc/danh-sach-mon-hoc.component';
-import { DanhSachGiangVienComponent } from './danh-sach-giang-vien/danh-sach-giang-vien.component';
+import { ThemGiangVienComponent } from './them-giang-vien/them-giang-vien.component';
+import { PhanCongDayComponent } from './phan-cong-day/phan-cong-day.component';
 
 
 const routes: Routes = [
   {
-    path: 'danh-sach-bo-mon',
-    component: DanhSachBoMonComponent
+    path: 'them-giang-vien',
+    component: ThemGiangVienComponent
    }, {
-     path: 'danh-sach-mon-hoc',
-     component: DanhSachMonHocComponent
-   }, {
-     path: 'danh-sach-giang-vien',
-     component: DanhSachGiangVienComponent
+     path: 'phan-cong-day',
+     component: PhanCongDayComponent
    }
 ];
 
