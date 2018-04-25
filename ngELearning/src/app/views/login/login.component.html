@@ -25,9 +25,9 @@
                   <label class="font-weight-bold" for="password">Mật khẩu</label>
                   <input type="password" class="form-control" id="password" name="password" formControlName="password" required />
                   <div class="help-block">
-                    <small class="form-text text-muted" *ngIf="loginFormGroup.controls['email'].errors && ( loginFormGroup.controls['email'].dirty || loginFormGroup.controls['email'].touched)">
-                      <p style="color: red " *ngIf="loginFormGroup.controls['email'].errors.required"> &nbsp;&nbsp; Mật khẩu không được để trống </p>
-                      <p style="color: red " *ngIf="loginFormGroup.controls['email'].errors.pattern"> &nbsp;&nbsp; Mật khẩu nhập không hợp lệ </p>
+                    <small class="form-text text-muted" *ngIf="loginFormGroup.controls['password'].errors && ( loginFormGroup.controls['password'].dirty || loginFormGroup.controls['password'].touched)">
+                      <p style="color: red " *ngIf="loginFormGroup.controls['password'].errors.required"> &nbsp;&nbsp; Mật khẩu không được để trống </p>
+                      <p style="color: red " *ngIf="loginFormGroup.controls['password'].errors.pattern"> &nbsp;&nbsp; Mật khẩu nhập không hợp lệ </p>
                     </small>
                   </div>
                 </div>

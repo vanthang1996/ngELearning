@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DanhSachBoMonComponent } from './danh-sach-bo-mon/danh-sach-bo-mon.component';
 import { TruongKhoaRoutingModule } from './truong-khoa-routing.module';
-import { DanhSachMonHocComponent } from './danh-sach-mon-hoc/danh-sach-mon-hoc.component';
-import { DanhSachGiangVienComponent } from './danh-sach-giang-vien/danh-sach-giang-vien.component';
+import { ThemGiangVienComponent } from './them-giang-vien/them-giang-vien.component';
+import { PhanCongDayComponent } from './phan-cong-day/phan-cong-day.component';
 
 @NgModule({
   imports: [
@@ -12,9 +11,8 @@ import { DanhSachGiangVienComponent } from './danh-sach-giang-vien/danh-sach-gia
   ],
   exports: [],
   declarations: [
-    DanhSachBoMonComponent,
-    DanhSachMonHocComponent,
-    DanhSachGiangVienComponent
+    ThemGiangVienComponent,
+    PhanCongDayComponent
   ],
   providers: [],
 })
