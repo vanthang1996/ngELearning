@@ -1,9 +1,9 @@
 // home navbar
 $(window).scroll(function() {
 	if ($(document).scrollTop() > 150) {
-		$('.be-navbar-lg').addClass('shrink');
+		$('.be-index-navbar-lg').addClass('shrink');
 	} else {
-		$('.be-navbar-lg').removeClass('shrink');
+		$('.be-index-navbar-lg').removeClass('shrink');
 	}
 });
 

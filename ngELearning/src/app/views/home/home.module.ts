@@ -4,8 +4,8 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 
 import { MainComponent } from './home-main/main.component';
-import { HttpClientModule } from '@angular/common/http';
-import { fakeBackendProvider } from '../../_helpers';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { JwtInterceptor } from '../../_helpers/JwtInterceptor';
 
 @NgModule({
   imports: [
@@ -17,6 +17,12 @@ import { fakeBackendProvider } from '../../_helpers';
   declarations: [
     MainComponent
   ],
-  providers: [fakeBackendProvider],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: JwtInterceptor,
+      multi: true
+    }
+  ],
 })
 export class HomeModule { }

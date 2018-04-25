@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { ConfigValue } from '../_helpers/config-value';
-import { User } from '../_models';
+import { Teacher } from '../_models';
 
 @Injectable()
 export class AuthenticationService {
@@ -23,15 +23,15 @@ export class AuthenticationService {
     return this.http.post<any>(this.config.url_port + this.config.auth_login, {
       email: email,
       pwd: password
-    }).map(user => {
-       console.log(user);
-      if (user && user.token) {
+    }).map(teacher => {
+      //  console.log(teacher);
+      if (teacher && teacher.token) {
         localStorage.setItem(
           this.config.token,
-          JSON.stringify(user.token)
+          JSON.stringify(teacher.token)
         );
       }
-      return user;
+      return teacher;
     });
   }
 
@@ -42,15 +42,15 @@ export class AuthenticationService {
   refreshToken(): any {
     return this.http.get(this.config.url_port + this.config.auth_refresh)
       .map(data => {
-        let user: any = {};
-        user = data;
-        if (user && user.access_token) {
+        let teacher: any = {};
+        teacher = data;
+        if (teacher && teacher.access_token) {
           localStorage.setItem(
             this.config.token,
-            JSON.stringify(user.access_token)
+            JSON.stringify(teacher.access_token)
           );
         }
-        return user;
+        return teacher;
       },
         (err: HttpErrorResponse) => {
           if (err.status === 403) {
@@ -61,9 +61,9 @@ export class AuthenticationService {
   }
 
   getInformation(): any {
-    return this.http.get(this.config.url_port + 'user/info')
-      .map((user: User) => {
-        return user;
+    return this.http.get(this.config.url_port + '/teacher/info')
+      .map((teacher: Teacher) => {
+        return teacher;
       }
       );
   }
