@@ -6,13 +6,13 @@ import { BoMonPhanCongComponent } from './bo-mon-phan-cong/bo-mon-phan-cong.comp
 
 const routes: Routes = [
   {
-    path: 'bo-mon-phan-cong',
+    path: '',
     component: BoMonPhanCongComponent
   }, {
-    path: 'mon-hoc-phan-cong',
+    path: 'mon-hoc',
     component: MonHocPhanCongComponent
   }, {
-    path: 'chi-tiet-phan-cong',
+    path: 'chi-tiet',
     component: ChiTietMonHocComponent
   }, {
     path: '**',

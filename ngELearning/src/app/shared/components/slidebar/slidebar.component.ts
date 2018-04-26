@@ -37,24 +37,30 @@ export class SlidebarComponent implements OnInit {
       this.teacher = teacher;
     });
   }
+
   addMenuForTk(): void {
     this.mapMenuRole.clear();
-    this.mapMenuRole.set('/tk/them-giang-vien', Array('fas fa-user-plus', 'Thêm giảng viên'));
-    this.mapMenuRole.set('/tk/phan-cong-day', Array('fab fa-forumbee', 'Phân công dạy'));
+    this.mapMenuRole.set('/bo-mon/danh-sach-bo-mon', Array('fas fa-archive', 'Bộ môn'));
+    this.mapMenuRole.set('/cong-viec', Array('fas fa-briefcase', 'Công việc'));
+    this.mapMenuRole.set('/phan-cong-day/bo-mon-phan-cong', Array('fab fa-leanpub', 'Phân công dạy'));
+    this.mapMenuRole.set('/them-giang-vien', Array('fas fa-plus', 'Thêm giảng viên'));
+    this.mapMenuRole.set('/them-bo-mon', Array('fas fa-plus', 'Thêm bộ môn'));
+    this.mapMenuRole.set('/them-mon-hoc', Array('fas fa-plus', 'Thêm môn học'));
   }
+
   addMenuForTbm(): void {
     this.mapMenuRole.clear();
-    this.mapMenuRole.set('/tbm/bo-mon', Array('fas fa-archive', 'Bộ môn'));
-    this.mapMenuRole.set('/tbm/phan-cong', Array('fab fa-forumbee', 'Phân công'));
-    this.mapMenuRole.set('/tbm/duyet', Array('fas fa-check', 'Duyệt'));
-    this.mapMenuRole.set('/tbm/chi-tiet-phan-cong', Array('fas fa-list', 'Chi tiết phân công'));
-    this.mapMenuRole.set('/tbm/tao-de-thi', Array('fas fa-edit', 'Tạo đề thi'));
+    this.mapMenuRole.set('/bo-mon/danh-sach-bo-mon', Array('fas fa-archive', 'Bộ môn'));
+    this.mapMenuRole.set('/phan-cong', Array('fab fa-forumbee', 'Phân công'));
+    this.mapMenuRole.set('/duyet-cong-viec', Array('fas fa-check', 'Duyệt'));
+    this.mapMenuRole.set('/de-thi', Array('fas fa-edit', 'Tạo đề thi'));
   }
+
   addMenuForGv(): void {
     this.mapMenuRole.clear();
-    this.mapMenuRole.set('/gv/mon-hoc', Array('fas fa-folder', 'Môn học'));
-    this.mapMenuRole.set('/gv/cong-viec', Array('fas fa-briefcase', 'Công việc'));
-    this.mapMenuRole.set('/gv/soan-cau-hoi', Array('fas fa-edit', 'Soạn câu hỏi'));
+    this.mapMenuRole.set('/mon-hoc', Array('fas fa-folder', 'Môn học'));
+    this.mapMenuRole.set('/cong-viec', Array('fas fa-briefcase', 'Công việc'));
+    this.mapMenuRole.set('/soan-cau-hoi', Array('fas fa-edit', 'Soạn câu hỏi'));
   }
 
   getRole(): void {

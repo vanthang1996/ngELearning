@@ -4,12 +4,12 @@ import { DanhSachCauHoiComponent } from './danh-sach-cau-hoi/danh-sach-cau-hoi.c
 
 const routes: Routes = [
   {
-    path: '**',
-    redirectTo: '/'
-  }, {
     path: 'danh-sach-cau-hoi',
     component: DanhSachCauHoiComponent
-  },
+  }, {
+    path: '**',
+    redirectTo: '/'
+  }
 ];
 
 @NgModule({

@@ -5,7 +5,7 @@ import { DanhSachMonHocComponent } from './danh-sach-mon-hoc/danh-sach-mon-hoc.c
 
 const routes: Routes = [
   {
-    path: 'danh-sach-mon-hoc',
+    path: '',
     component: DanhSachMonHocComponent
   }, {
     path: '**',
