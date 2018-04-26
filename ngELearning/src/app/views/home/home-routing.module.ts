@@ -3,10 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { MainComponent } from './home-main/main.component';
 import { CauTrucComponent } from './cau-truc/cau-truc.component';
-import { CongViecComponent } from './cong-viec/cong-viec.component';
 import { ThemGiangVienComponent } from './them-giang-vien/them-giang-vien.component';
 import { ThemBoMonComponent } from './them-bo-mon/them-bo-mon.component';
 import { ThemMonHocComponent } from './them-mon-hoc/them-mon-hoc.component';
+import { DuyetCongViecComponent } from './duyet-cong-viec/duyet-cong-viec.component';
+import { ChiTietCongViecComponent } from './chi-tiet-cong-viec/chi-tiet-cong-viec.component';
+import { SoanCauHoiComponent } from './soan-cau-hoi/soan-cau-hoi.component';
 
 const routes: Routes = [
   {
@@ -28,8 +30,8 @@ const routes: Routes = [
     path: 'cau-hoi',
     loadChildren: './cau-hoi/cau-hoi.module#CauHoiModule'
   }, {
-    path: 'cong-viec',
-    component: CongViecComponent
+    path: 'chi-tiet-cong-viec',
+    component: ChiTietCongViecComponent
   }, {
     path: 'phan-cong-day',
     loadChildren: './phan-cong-day/phan-cong-day.module#PhanCongDayModule'
@@ -42,6 +44,21 @@ const routes: Routes = [
   }, {
     path: 'them-mon-hoc',
     component: ThemMonHocComponent
+  }, {
+    path: 'phan-cong',
+    loadChildren: './phan-cong/phan-cong.module#PhanCongModule'
+  }, {
+    path: 'duyet-cong-viec',
+    component: DuyetCongViecComponent
+  }, {
+    path: 'de-thi',
+    loadChildren: './de-thi/de-thi.module#DeThiModule'
+  }, {
+    path: 'cong-viec',
+    loadChildren: './cong-viec/cong-viec.module#CongViecModule'
+  }, {
+    path: 'soan-cau-hoi',
+    component: SoanCauHoiComponent
   }
 ];
 

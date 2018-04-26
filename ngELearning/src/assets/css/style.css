@@ -2759,7 +2759,7 @@ body::-webkit-scrollbar-track {
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
   background: #fff;
-  color: #4F80E1;
+  color: #4DADF7;
   border-radius: 10rem;
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=16, Direction=0, Color=#2E2E2E)";
   /*IE 8*/
@@ -2777,7 +2777,7 @@ body::-webkit-scrollbar-track {
 .be-btn-blue {
   padding: .5rem 1rem;
   font-size: 1rem;
-  background: #4F80E1;
+  background: #4DADF7;
   color: #fff;
   border-radius: 10rem;
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=16, Direction=0, Color=#2E2E2E)";
@@ -2791,7 +2791,7 @@ body::-webkit-scrollbar-track {
   filter: progid:DXImageTransform.Microsoft.Shadow(Strength=16, Direction=135, Color=#2E2E2E);
   /*IE 5.5-7*/ }
   .be-btn-blue:hover {
-    background: #3162c3;
+    background: #2f8fd9;
     color: #cdcdcd; }
 
 .be-btn-red {
@@ -2824,7 +2824,7 @@ body::-webkit-scrollbar-track {
   border-radius: 50%; }
 
 .badge-blue {
-  background: #4F80E1;
+  background: #4DADF7;
   color: #fff;
   font-size: 0.8rem; }
 
@@ -2956,7 +2956,7 @@ body::-webkit-scrollbar-track {
           text-align: center;
           font-size: 0.7rem; }
       .wrapper .sidebar__body {
-        border-bottom: 1px solid #6d9eff; }
+        border-bottom: 1px solid #6bcbff; }
         .wrapper .sidebar__body ul li {
           text-align: center; }
           .wrapper .sidebar__body ul li a {
@@ -2981,7 +2981,7 @@ body::-webkit-scrollbar-track {
             .wrapper .sidebar__body ul li a i {
               font-size: 3rem; }
             .wrapper .sidebar__body ul li a:hover {
-              color: #4F80E1;
+              color: #4DADF7;
               background: #fff; }
             .wrapper .sidebar__body ul li a[data-toggle="collapse"] {
               position: relative; }
@@ -3033,7 +3033,7 @@ body::-webkit-scrollbar-track {
         text-align: center;
         font-size: 1rem; }
     .wrapper .sidebar__body {
-      border-bottom: 1px solid #6d9eff; }
+      border-bottom: 1px solid #6bcbff; }
       .wrapper .sidebar__body ul li {
         text-align: left; }
         .wrapper .sidebar__body ul li a {
@@ -3056,7 +3056,7 @@ body::-webkit-scrollbar-track {
           .wrapper .sidebar__body ul li a i {
             font-size: 1.5rem; }
           .wrapper .sidebar__body ul li a:hover {
-            color: #4F80E1;
+            color: #4DADF7;
             background: #fff; }
           .wrapper .sidebar__body ul li a[data-toggle="collapse"] {
             position: relative; }
@@ -3129,7 +3129,7 @@ body::-webkit-scrollbar-track {
       .wrapper .content .card .card-body .upload-avatar .input-file-container .input-file-trigger {
         display: block;
         padding: 10px 45px;
-        background: #4F80E1;
+        background: #4DADF7;
         border-radius: 20px;
         color: #fff;
         font-size: 1em;
@@ -3138,7 +3138,7 @@ body::-webkit-scrollbar-track {
         transition: all .4s;
         cursor: pointer; }
         .wrapper .content .card .card-body .upload-avatar .input-file-container .input-file-trigger:hover {
-          background: #3162c3;
+          background: #2f8fd9;
           color: #cdcdcd; } }
 
 @media (max-width: 575px) {
@@ -3162,7 +3162,7 @@ body::-webkit-scrollbar-track {
       .wrapper .content .card .card-body .upload-avatar .input-file-container .input-file-trigger {
         display: block;
         padding: 10px 45px;
-        background: #4F80E1;
+        background: #4DADF7;
         border-radius: 20px;
         color: #fff;
         font-size: 1em;
@@ -3171,7 +3171,7 @@ body::-webkit-scrollbar-track {
         transition: all .4s;
         cursor: pointer; }
         .wrapper .content .card .card-body .upload-avatar .input-file-container .input-file-trigger:hover {
-          background: #3162c3;
+          background: #2f8fd9;
           color: #cdcdcd; } }
 
 @media screen and (min-width: 992px) {
@@ -3184,7 +3184,7 @@ body::-webkit-scrollbar-track {
       -webkit-transition: .5s;
       -o-transition: .5s;
       transition: .5s;
-      background: #4F80E1;
+      background: #4DADF7;
       border: none; }
       .hbe-navbar-large .be-navbar-lg .navbar-brand {
         font-weight: bold;
@@ -3206,7 +3206,7 @@ body::-webkit-scrollbar-track {
       .hbe-navbar-large .be-navbar-lg .navbar-nav .nav-item:hover {
         background: #fff; }
         .hbe-navbar-large .be-navbar-lg .navbar-nav .nav-item:hover > .nav-link {
-          color: #4F80E1; }
+          color: #4DADF7; }
       .hbe-navbar-large .be-navbar-lg .navbar-nav .nav-item .menu-notify {
         min-width: 500px;
         max-width: 500px;
@@ -3259,7 +3259,7 @@ body::-webkit-scrollbar-track {
       .hbe-navbar-large .shrink .navbar-nav .nav-item:hover {
         background: #fff; }
         .hbe-navbar-large .shrink .navbar-nav .nav-item:hover > .nav-link {
-          color: #4F80E1; }
+          color: #4DADF7; }
   .hbe-navbar-small {
     display: none; }
   .be-navbar-sm {
@@ -3287,7 +3287,7 @@ body::-webkit-scrollbar-track {
   .be-navbar-sm {
     display: block; }
     .be-navbar-sm .be-navbar {
-      background: #4F80E1; }
+      background: #4DADF7; }
       .be-navbar-sm .be-navbar .navbar-brand {
         font-weight: bold;
         font-size: 2rem;
@@ -3303,7 +3303,7 @@ body::-webkit-scrollbar-track {
   .hbe-navbar-small {
     display: block; }
     .hbe-navbar-small .be-navbar-sm {
-      background: #4F80E1; }
+      background: #4DADF7; }
       .hbe-navbar-small .be-navbar-sm .be-navbar-sm-item {
         padding: 1rem 0;
         text-align: center; }
@@ -3323,7 +3323,7 @@ body::-webkit-scrollbar-track {
         .hbe-navbar-small .be-navbar-sm .be-navbar-sm-item:hover {
           background: #e1e1e1; }
           .hbe-navbar-small .be-navbar-sm .be-navbar-sm-item:hover > .nav-item, .hbe-navbar-small .be-navbar-sm .be-navbar-sm-item:hover > .nav-brand {
-            color: #4F80E1; } }
+            color: #4DADF7; } }
     @media (max-width: 991px) and (min-width: 576px) {
       .hbe-navbar-small .be-navbar-sm .none-show-ex {
         display: block; }
@@ -3354,7 +3354,7 @@ body::-webkit-scrollbar-track {
 @media screen and (min-width: 992px) {
   .footer {
     padding: 1rem 0;
-    background: #4F80E1;
+    background: #4DADF7;
     color: #fff; }
     .footer a {
       color: #fff; } }
@@ -3362,14 +3362,14 @@ body::-webkit-scrollbar-track {
 @media (max-width: 991px) {
   .footer {
     padding: 1rem 0 5rem 0;
-    background: #4F80E1;
+    background: #4DADF7;
     color: #fff; }
     .footer a {
       color: #fff; } }
 
 @media screen and (min-width: 992px) {
   .home-content .jumbotron {
-    background: #4F80E1;
+    background: #4DADF7;
     padding: 15rem 0;
     -moz-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
@@ -3383,17 +3383,17 @@ body::-webkit-scrollbar-track {
     .home-content .jumbotron__text .typewrite {
       font-size: 5rem; }
   .home-content .introduction h2 {
-    color: #4F80E1; }
+    color: #4DADF7; }
   .home-content .introduction img {
     width: 100%; }
   .home-content .connect {
-    background: #4F80E1 url("../images/da-lat.jpg");
+    background: #4DADF7 url("../images/da-lat.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
     .home-content .connect .connect-text {
-      background: rgba(79, 128, 225, 0.7);
+      background: rgba(77, 173, 247, 0.7);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -3411,7 +3411,7 @@ body::-webkit-scrollbar-track {
           -webkit-transition: .5s;
           -o-transition: .5s;
           transition: .5s;
-          color: #4F80E1;
+          color: #4DADF7;
           background: rgba(255, 255, 255, 0.8);
           -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=16, Direction=0, Color=#111B30)";
           /*IE 8*/
@@ -3426,7 +3426,7 @@ body::-webkit-scrollbar-track {
 
 @media (max-width: 991px) {
   .home-content .jumbotron {
-    background: #4F80E1;
+    background: #4DADF7;
     padding: 5rem 0;
     -webkit-transition: .5s;
     -o-transition: .5s;
@@ -3439,20 +3439,20 @@ body::-webkit-scrollbar-track {
       .home-content .jumbotron__text .typewrite {
         font-size: 3rem; }
   .home-content .introduction h2 {
-    color: #4F80E1;
+    color: #4DADF7;
     text-align: center; }
   .home-content .introduction p {
     text-align: center; }
   .home-content .introduction img {
     width: 100%; }
   .home-content .connect {
-    background: #4F80E1 url("../images/da-lat.jpg");
+    background: #4DADF7 url("../images/da-lat.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
     .home-content .connect .connect-text {
-      background: rgba(79, 128, 225, 0.7);
+      background: rgba(77, 173, 247, 0.7);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -3470,7 +3470,7 @@ body::-webkit-scrollbar-track {
           -webkit-transition: .5s;
           -o-transition: .5s;
           transition: .5s;
-          color: #4F80E1;
+          color: #4DADF7;
           background: rgba(255, 255, 255, 0.8);
           -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=16, Direction=0, Color=#111B30)";
           /*IE 8*/
@@ -3484,7 +3484,7 @@ body::-webkit-scrollbar-track {
           /*IE 5.5-7*/ } }
 
 .sign-content {
-  background: #4F80E1 url("../images/da-lat.jpg");
+  background: #4DADF7 url("../images/da-lat.jpg");
   min-height: 100vh;
   height: 100%;
   background-position: center;
@@ -3493,13 +3493,13 @@ body::-webkit-scrollbar-track {
   .sign-content .sign-text .card-sign .card-body .navbar-brand {
     font-weight: bold;
     font-size: 3rem;
-    color: #4F80E1;
+    color: #4DADF7;
     cursor: pointer;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s; }
     .sign-content .sign-text .card-sign .card-body .navbar-brand:hover {
-      color: #4F80E1; }
+      color: #4DADF7; }
 
 @media screen and (min-width: 1200px) {
   .sign-content .sign-text {

@@ -5,12 +5,12 @@ import { DanhSachBoMonComponent } from './danh-sach-bo-mon/danh-sach-bo-mon.comp
 
 const routes: Routes = [
   {
-    path: '**',
-    redirectTo: '/'
-  }, {
     path: 'danh-sach-bo-mon',
     component: DanhSachBoMonComponent
-  },
+  }, {
+    path: '**',
+    redirectTo: '/'
+  }
 ];
 
 @NgModule({
