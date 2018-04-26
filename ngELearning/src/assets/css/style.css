@@ -2814,6 +2814,15 @@ body::-webkit-scrollbar-track {
     background: #bf0013;
     color: #cdcdcd; }
 
+.btn-minimum {
+  font-size: 0.5rem;
+  background: #F6BF08;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid #333;
+  -webkit-box-shadow: 0;
+  box-shadow: 0;
+  border-radius: 50%; }
+
 .badge-blue {
   background: #4F80E1;
   color: #fff;

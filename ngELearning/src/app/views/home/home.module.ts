@@ -6,6 +6,11 @@ import { HomeRoutingModule } from './home-routing.module';
 import { MainComponent } from './home-main/main.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { JwtInterceptor } from '../../_helpers/JwtInterceptor';
+import { CauTrucComponent } from './cau-truc/cau-truc.component';
+import { CongViecComponent } from './cong-viec/cong-viec.component';
+import { ThemGiangVienComponent } from './them-giang-vien/them-giang-vien.component';
+import { ThemBoMonComponent } from './them-bo-mon/them-bo-mon.component';
+import { ThemMonHocComponent } from './them-mon-hoc/them-mon-hoc.component';
 
 @NgModule({
   imports: [
@@ -15,7 +20,12 @@ import { JwtInterceptor } from '../../_helpers/JwtInterceptor';
   ],
   exports: [],
   declarations: [
-    MainComponent
+    MainComponent,
+    CauTrucComponent,
+    CongViecComponent,
+    ThemGiangVienComponent,
+    ThemBoMonComponent,
+    ThemMonHocComponent
   ],
   providers: [
     {
