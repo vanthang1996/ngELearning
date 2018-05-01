@@ -8,21 +8,27 @@
         <table class="table table-hover">
           <thead class="text-center">
             <tr>
-              <th scope="col">Mã môn học</th>
+              <!-- <th scope="col">Mã môn học</th> -->
               <th scope="col">Tên môn học</th>
-              <th scope="col">Tên giảng viên</th>
-              <th scope="col">Chi tiết</th>
+              <th scope="col">Giảng viên phụ trách</th>
+              <th scope="col">Đê cương</th>
+              <th scope="col">Cấu trúc đề thi</th>
             </tr>
           </thead>
           <tbody class="text-center">
-            <tr>
-              <th scope="row">1</th>
-              <td>Hệ thống thông tin</td>
-              <td>Trần Lê Như Quỳnh</td>
+            <tr *ngFor="let subject of subjects">
+              <!-- <th scope="row">1</th> -->
+              <td>{{subject.subjectName}}</td>
+              <td>{{subject.teacherManagement.firstName+' '+subject.teacherManagement.lastName}}</td>
               <td>
-                <button class="btn btn-primary">Đề cương</button>
-                <button class="btn btn-primary">Cấu trúc đề thi</button>
-                <button class="btn btn-primary">Danh sách câu hỏi</button>
+                <a class="btn btn-primary" [routerLink]="['/chuong-muc/xem-de-cuong', subject.subjectId]">
+                  <i class="fas fa-align-right"></i>
+                </a>
+              </td>
+              <td>
+                <a class="btn btn-primary" [routerLink]="['/cau-truc',subject.subjectId]">
+                  <i class="fas fa-align-right"></i>
+                </a>
               </td>
             </tr>
           </tbody>

@@ -1,3 +1,4 @@
+import { SubjectService } from './_services/subjectService.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -16,6 +17,8 @@ import { MockBackend } from '@angular/http/testing';
 import { AuthenticationService } from './_services/authentication.service';
 import { ConfigValue } from './_helpers/config-value';
 import { JwtInterceptor } from './_helpers/JwtInterceptor';
+import { TeacherService } from './_services/teacherService.service';
+import { StructureTestDetailService } from './_services/structureTestDetailService.service';
 
 const APP_COMPONENTS = [
   HeaderComponent,
@@ -46,6 +49,9 @@ const APP_CONTAINERS = [
     AuthGuard,
     ConfigValue,
     AuthenticationService,
+    TeacherService,
+    SubjectService,
+    StructureTestDetailService,
     BaseRequestOptions,
     {
       provide: HTTP_INTERCEPTORS,
