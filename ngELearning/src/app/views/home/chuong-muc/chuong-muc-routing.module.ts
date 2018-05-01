@@ -5,7 +5,7 @@ import { XemDeCuongComponent } from './xem-de-cuong/xem-de-cuong.component';
 
 const routes: Routes = [
   {
-    path: 'xem-de-cuong',
+    path: 'xem-de-cuong/:subjectId',
     component: XemDeCuongComponent
   }, {
     path: '**',

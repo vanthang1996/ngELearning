@@ -24,7 +24,7 @@ const routes: Routes = [
     path: 'chuong-muc',
     loadChildren: './chuong-muc/chuong-muc.module#ChuongMucModule'
   }, {
-    path: 'cau-truc',
+    path: 'cau-truc/:subjectId',
     component: CauTrucComponent
   }, {
     path: 'cau-hoi',
