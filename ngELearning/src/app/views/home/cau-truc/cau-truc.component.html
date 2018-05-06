@@ -10,13 +10,13 @@
             <th>Tổng số câu</th>
             <td>Tổng số điểm hiện tại</td>
             <td>Số câu dễ</td>
-            <td>@Số câu khó</td>
+            <td>Số câu khó</td>
           </tr>
           <tr>
-            <th>32</th>
-            <td>13.0</td>
-            <td>22</td>
-            <td>10</td>
+            <th>{{numberOfQuestion}}</th>
+            <td>{{numberOfScore}}</td>
+            <td>{{numberOfQuestionEasy}}</td>
+            <td>{{numberOfQuestion - numberOfQuestionEasy}}</td>
           </tr>
         </tbody>
       </table>
@@ -35,19 +35,13 @@
             </tr>
           </thead>
           <tbody class="text-center">
-            <tr>
-              <th scope="row">Chương 1</th>
-              <td>Chapter 1</td>
-              <td>Dễ</td>
-              <td>5</td>
-              <td>2.5</td>
-            </tr>
-            <tr>
-              <th scope="row">Chương 1</th>
-              <td>Chapter 2</td>
-              <td>Dễ</td>
-              <td>5</td>
-              <td>2.5</td>
+            <tr *ngFor="let strucTestDetail of strucTestDetails">
+
+              <td>{{strucTestDetail.chapter.chapterName}}</td>
+              <td>{{strucTestDetail.chapter.describe}}</td>
+              <td>{{strucTestDetail.level.levelName}}</td>
+              <td>{{strucTestDetail.numberOfQuestion}}</td>
+              <td>{{strucTestDetail.totalScore}}</td>
             </tr>
           </tbody>
         </table>

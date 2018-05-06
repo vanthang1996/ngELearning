@@ -1,4 +1,5 @@
 import { Role } from './role';
+import { Subject } from './subject';
 
 export class Teacher {
   public teacherId: number;
@@ -13,7 +14,8 @@ export class Teacher {
   public phoneNumber: string;
   public sex: boolean;
   public departmentId: number;
-  public subjects: any[];
+  public subjects: Subject[];
   public jobs: any[];
   public role: Role[];
+
 }
