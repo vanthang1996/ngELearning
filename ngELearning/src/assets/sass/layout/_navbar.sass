@@ -6,18 +6,20 @@
 		.be-navbar-lg
 			-webkit-transition: .5s
 			transition: .5s
-			background: $blue-color
+			background: #ffffff
 			border: none
+			box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08)
+
 			.navbar-brand
 				font:
 					weight: bold
 					size: 3rem
-				color: #fff
+				color: #4C5154
 				cursor: pointer
 				-webkit-transition: .5s
 				transition: .5s
 				&:hover
-					color: #fff
+					color: #4C5154
 			.navbar-nav
 				.nav-item
 					.nav-link
@@ -25,12 +27,13 @@
 						transition: .5s
 						font:
 							size: 2rem
-						color: $white-color
+						color: #6A6E71
 						padding: 1.1rem 1.5rem
 					&:hover
-						background: #fff
+						background: #F8F9FD
 						& > .nav-link
-							color: $blue-color
+							color: #4C5154
+
 					.menu-notify
 						min-width: 500px
 						max-width: 500px
@@ -70,25 +73,25 @@
 				font:
 					weight: bold
 					size: 2rem
-				color: #fff
+				color: #4C5154
 				cursor: pointer
 				-webkit-transition: .5s
 				transition: .5s
 				&:hover
-					color: #fff
+					color: #4C5154
 			.navbar-nav
 				.nav-item
 					.nav-link
 						font:
 							size: 1.2rem
-						color: $white-color
+						color: #6A6E71
 						padding: 1.1rem 1.5rem
 						-webkit-transition: .5s
 						transition: .5s
 					&:hover
-						background: #fff
+						background: #F8F9FD
 						& > .nav-link
-							color: $blue-color
+							color: #4C5154
 
 	.hbe-navbar-small
 		display: none
@@ -119,17 +122,18 @@
 	.be-navbar-sm
 		display: block
 		.be-navbar
-			background: $blue-color
+			background: #ffffff
+			box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08)
 			.navbar-brand
 				font:
 					weight: bold
 					size: 2rem
-				color: #fff
+				color: #4C5154
 				cursor: pointer
 				-webkit-transition: .5s
 				transition: .5s
 				&:hover
-					color: #fff
+					color: #4C5154
 			.navbar-collapse
 				.navbar-nav
 					.nav-item
@@ -138,7 +142,7 @@
 	.hbe-navbar-small
 		display: block
 		.be-navbar-sm
-			background: $blue-color
+			background: #ffffff
 			.be-navbar-sm-item
 				padding: 1rem 0
 				text-align: center
@@ -147,19 +151,19 @@
 					font:
 						weight: bold
 						size: 1.2rem
-					color: #fff
+					color: #4C5154
 				.nav-item
 					font:
 						weight: bold
 						size: 1.2rem
-					color: #fff
+					color: #4C5154
 					cursor: pointer
 					-webkit-transition: .5s
 					transition: .5s	
 				&:hover
-					background: #fff - 30
+					background: #F8F9FD
 					& > .nav-item, & > .nav-brand
-						color: $blue-color	
+						color: #4C5154	
 			
 			@media (min-width: 576px)
 				.none-show-ex
