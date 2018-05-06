@@ -23,7 +23,7 @@
 			min-width: 250px
 			max-width: 250px
 			transition: all 0.3s
-			background: #2e353d
+			background: linear-gradient(#4A4E57, #1E2126)
 			color: #fff
 			min-height: 100vh
 			&__header
@@ -39,7 +39,7 @@
 						text-decoration: none
 						font-size: 1.5rem
 						color: #fff
-            text-transform: uppercase
+            			text-transform: uppercase
 				h6
 					text-align: center
 					font-size: 1rem
@@ -47,6 +47,9 @@
 				border-bottom: 1px solid (#2e353d + 50)
 				ul
 					li
+						border-bottom: 1px solid #3A3F45 - 20
+						&:last-child
+							border-bottom: 0
 						a
 							text-algin: left
 							text-decoration: none
@@ -69,19 +72,19 @@
 								margin-right: 10px
 
 							&:hover
-								color: #2e353d
-								background: #fff
+								color: #3A3F45
+								background: #F5F6FA
 
 						&.active > a, a[aria-expanded="true"]
 							color: #fff
-							background: #426bbc
+							background: #3A3F45 - 20
 
 						ul
 							li
 								a
 									font-size: 0.9em !important
 									padding-left: 30px !important
-									background: #426bbc
+									background: #3A3F45 - 20
 									// color: #fff
 			&__footer
 				a
@@ -101,7 +104,7 @@
 			min-width: 100px
 			max-width: 100px
 			transition: all 0.3s
-			background: #2e353d
+			background: linear-gradient(#4A4E57, #1E2126)
 			color: #fff
 			&__header
 				margin-bottom: 10px
@@ -124,6 +127,10 @@
 				ul
 					li
 						text-align: center
+						border-bottom: 1px solid #3A3F45 - 20
+						&:last-child
+							border-bottom: 0
+						
 						a
 							text-algin: center
 							text-decoration: none
@@ -131,7 +138,7 @@
 							font-size: 1.2rem
 							padding: 10px
 							display: block
-							min-height: 90px
+							min-height: 50px
 							&.dropdown-toggle::after
 								text-algin: center
 								display: inline-block
@@ -146,11 +153,14 @@
 								border-left: .3em solid transparent
 
 							i
-								font-size: 3rem
+								font-size: 2rem
+
+							.slide-text
+								display: none
 
 							&:hover
-								color: $blue-color
-								background: #fff
+								color: #3A3F45
+								background: #F5F6FA
 
 							&[data-toggle="collapse"]
 								position: relative
@@ -165,13 +175,13 @@
 
 						&.active > a, a[aria-expanded="true"]
 							color: #fff
-							background: #426fc9
+							background: #3A3F45 - 20
 
 						ul
 							li
 								a
 									font-size: 0.9em !important
-									background: #426fc9
+									background: #3A3F45 - 20
 									min-height: 40px
 			&__footer
 				a
@@ -187,7 +197,7 @@
 			z-index: 1000
 			position: fixed
 			transition: all 0.3s
-			background: #2e353d
+			background: linear-gradient(#4A4E57, #1E2126)
 			color: #fff
 			position: relative
 			&__header
@@ -233,21 +243,21 @@
 								font-size: 1.5rem
 
 							&:hover
-								color: $blue-color
-								background: #fff
+								color: #3A3F45
+								background: #F5F6FA
 
 							&[data-toggle="collapse"]
 								position: relative
 
 						&.active > a, a[aria-expanded="true"]
 							color: #fff
-							background: #426fc9
+							background: #3A3F45 - 20
 
 						ul
 							li
 								a
 									font-size: 0.9em !important
-									background: #426fc9
+									background: #3A3F45 - 20
 									// min-height: 40px
 			&__footer
 				a
